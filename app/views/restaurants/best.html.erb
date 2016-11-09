@@ -1,0 +1,7 @@
+<h1>Our Restaurants with at least 3 Reviews</h1>
+
+<ul>
+  <% @best_restaurants.each do |restaurant| %>
+  <li><%= restaurant.name%>   (<%= restaurant.reviews %>)</li>
+<% end %>
+</ul>
